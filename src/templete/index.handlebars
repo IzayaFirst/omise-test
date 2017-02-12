@@ -1,0 +1,34 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Omise.js</title>
+
+    <!--
+      Omise.js works best with Internet Explorer standard mode. It is
+      recommended to add this <meta> tag if one does not already exists.
+    -->
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+  </head>
+  <body>
+
+    <form name="checkoutForm" method="POST" action="/Checkout">
+        <input type="hidden" name="description" value="Product order ฿100.25" />
+        <script type="text/javascript" src="https://cdn.omise.co/card.js"
+          data-key="pkey_test_56xvl9va3f9qn599j5x"
+          data-image=""
+          data-frame-label="MileStyle"
+          data-button-label="Pay now"
+          data-submit-label="Submit"
+          data-location="yes"
+          data-amount="20000"
+          data-currency="thb"
+          >
+        </script>
+        <!--the script will render <input type="hidden" name="omiseToken"> for you automatically-->
+    </form>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+  </body>
+</html>
